@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Preloader styling */
+
+#preload {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(20, 8, 8);
+  transition: opacity 0.5s ease;
+}
+
+#preloader {
+  position: absolute;
+  position: absolute;
+  position: absolute;
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fill 0.5s ease forwards 2.5s;
+}
+
+#preloader path:nth-child(1) {
+  stroke-dasharray: 762;
+  stroke-dashoffset: 762;
+  animation: line-anim 5s ease forwards;
+}
+
+#preloader path:nth-child(2) {
+  stroke-dasharray: 327;
+  stroke-dashoffset: 327;
+  animation: line-anim 3s ease forwards;
+}
+
+@keyframes line-anim {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: rgb(192, 107, 59);
+  }
+}
+
+/* End of pre loader styling */
+/* Animate the content */
+
+.animate-bottom {
+  position: absolute;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+/* 
+.wrapper { display: none} */
+
+/* Navigation */
+.nav {
+  background: rgb(20, 8, 8);
+  width: 100%;
+}
+
+nav img {
+  height: 50px;
+  float: left;
+  margin-top: 10px;
+}
+
+nav {
+  padding: 0 15em 0 17em;
+  width: 100%;
+  z-index: 50;
+  height: 60px;
+  height: 60px;
+  height: 60px;
+  height: 60px;
+  height: 60px;
+  position: fixed;
+  position: fixed;
+  position: fixed;
+  position: fixed;
+  position: fixed;
+  top: 0;
+  background: rgb(20, 8, 8);
+  text-align: center;
+  opacity: 0.8;
+}
+
+nav .dropdown {
+  display: none;
+}
+
+nav ul {
+  float: right;
+  padding: 20px;
+  margin: 0 auto;
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0 32px;
+}
+nav ul li a {
+  text-transform: uppercase;
+  padding: 10px 0;
+  color: rgb(204, 200, 200);
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+nav ul li a:hover {
+  color: rgb(170, 80, 6);
+}
+a.active {
+  border-bottom: 2px solid #ecf0f1;
+}
+
+/* Headings */
+
+h1 {
+  font-weight: 700;
+  font-size: 5rem;
+  color: rgb(204, 200, 200);
+}
+
+/* Sections */
+
+section {
+  width: 100%;
+  padding: 8em;
+  background: rgb(20, 8, 8);
+  height: 100vh;
+  text-align: center;
+}
+
+#s3 {
+  height: auto;
+}
+
+#s4 {
+  height: 80vh;
+}
+
+footer {
+  background: rgb(20, 8, 8);
+}
+
+/* Header */
+
+.hero {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.text,
+.description {
+  color: rgb(204, 200, 200);
+  font-size: 20px;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.description {
+  margin: 8px;
+  text-align: center;
+}
+
+.sub-heading {
+  color: rgb(204, 200, 200);
+  display: block;
+  margin: 0 0 2.5em 2.5em;
+  border-bottom: 2px solid wheat;
+  width: 15%;
+}
+
+/* About section */
+.info img {
+  height: 150px;
+  margin-bottom: 2rem;
+  padding: 8px;
+  border: 1px solid rgb(255, 234, 234);
+  background: transparent;
+  opacity: 0.8;
+  transition: opacity 0.5s;
+}
+
+.info img:hover {
+  opacity: 1;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 8rem;
+}
+
+/* Scrolling effects */
+
+[data-scroll] {
+  transition: opacity 2s;
+}
+[data-scroll="in"] {
+  opacity: 1;
+}
+[data-scroll="out"] {
+  opacity: 0;
+}
+
+/* Font awesome */
+.technologies i,
+.contact-box i {
+  font-size: 60px;
+  margin: 8px;
+  padding: 8px;
+  opacity: 0.7;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.technologies i:hover,
+.contact-box i:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.technologies img {
+  margin: 8px;
+  padding: 8px;
+  opacity: 0.7;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.technologies img:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* Projects  scrolling styling*/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  position: relative;
+  width: calc(33.333% - 20px);
+  height: auto;
+  margin: 10px;
+  will-change: transform;
+  opacity: calc(var(--visible-y) * var(--visible-y));
+  transform: scale(calc(0.5 + calc(var(--visible-y) * 0.5)));
+  background-color: rgb(44, 42, 42);
+}
+
+.project img {
+  opacity: 1;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  margin-bottom: 5px;
+}
+
+.project:hover img {
+  opacity: 0.3;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.project:hover .middle {
+  opacity: 1;
+}
+
+.middle i {
+  font-size: 60px;
+  color: rgb(220, 223, 224);
+  margin: 5px;
+  transition: color 0.5s;
+}
+
+.middle i:hover {
+  color: rgb(141, 92, 92);
+}

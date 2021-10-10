@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script src="https://kit.fontawesome.com/1bfaa240fa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./queries.css" />
+    <link rel="shortcut icon" type="image/png" href="./img/favicon.png" />
+    <title>Jackie's page</title>
+</head>
+
+<body onload="myFunction()">
+    <!-- Preloader -->
+    <div id="preload">
+        <svg id="preloader" width="130" height="130" viewBox="0 0 130 130" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M65 122.333C96.6643 122.333 122.333 96.6643 122.333 65C122.333 33.3357 96.6643 7.66667 65 7.66667C33.3357 7.66667 7.66667 33.3357 7.66667 65C7.66667 96.6643 33.3357 122.333 65 122.333ZM129 65C129 100.346 100.346 129 65 129C29.6538 129 1 100.346 1 65C1 29.6538 29.6538 1 65 1C100.346 1 129 29.6538 129 65Z"
+                stroke="#C06B3B" stroke-width="2" />
+            <path
+                d="M45.8147 93.5519L45.826 93.5485L45.8373 93.5449C47.7936 92.9189 49.3354 92.1376 50.3346 91.1384C51.4746 89.9984 51.9925 88.4685 51.9925 86.6775C51.9925 84.8435 51.3725 83.2607 50.1192 82.0012C48.8012 80.598 46.8609 79.99 44.5087 79.99C42.9385 79.99 41.3351 80.4694 39.7123 81.3607C38.0948 82.214 36.7596 83.5231 35.696 85.2412C34.5931 87.0227 34.0675 89.1479 34.0675 91.5688C34.0675 96.9222 36.0025 101.206 39.9068 104.297C43.7581 107.346 48.6166 108.835 54.405 108.835C58.515 108.835 62.3245 107.845 65.815 105.863C69.3985 103.871 72.2559 100.966 74.3866 97.1778C76.5335 93.361 77.5863 88.8627 77.5863 83.72V31.5088C77.5863 30.5486 77.7989 30.1178 77.9759 29.9409C78.253 29.6637 78.75 29.4375 79.6575 29.4375H87.8475H88.8475V28.4375V24.7975V23.7975H87.8475H54.86H53.86V24.7975V28.4375V29.4375H54.86H63.05C63.9723 29.4375 64.3815 29.6696 64.5657 29.8846L64.6158 29.943L64.6742 29.993C64.8891 30.1772 65.1212 30.5865 65.1212 31.5088V89.5213C65.1212 93.3624 64.146 96.6034 62.2348 99.2933C60.3859 101.895 57.8166 103.195 54.405 103.195C51.0508 103.195 48.2749 102.54 46.0331 101.282C43.8455 99.9797 42.8925 98.3792 42.8925 96.46C42.8925 95.4802 43.1174 94.9588 43.3745 94.6866C43.8272 94.3017 44.6082 93.9067 45.8147 93.5519Z"
+                stroke="#C06B3B" stroke-width="2" />
+        </svg>
+    </div>
+    <!-- End of preloader -->
+
+    <!-- Main content -->
+    <div id="wrapper" style="display: none">
+        <!-- Navigation -->
+        <div class="nav">
+            <nav class="w3-animate-opacity">
+                <img src="./img/logo.png" alt="logo" />
+                <div class="dropdown">
+                    <i style="color: white" class="fas fa-bars fa-2x"></i>
+                </div>
+                <ul id="topnav" class="nav-list">
+                    <li><a href="#s1">Home</a></li>
+                    <li><a href="#s2">About</a></li>
+                    <li><a href="#s3">Projects</a></li>
+                    <li><a href="#s4">Contact</a></li>
+                    <li><a href="./resume.pdf" target="_blank">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- End of Navigation -->
+
+        <div class="sections">
+            <!-- Header -->
+            <section id="s1">
+                <div class="hero">
+                    <h1 class="intro w3-animate-opacity">Hi, I am Jack.</h1>
+                    <p class="text">I build things for the web.</p>
+                </div>
+            </section>
+            <!-- End of Header -->
+
+            <!-- About -->
+            <section id="s2">
+                <h3 class="sub-heading">01. About me</h3>
+                <div class="about">
+                    <div class="info">
+                        <img src="img/avatar.png" alt="Profile" />
+                        <p class="text">
+                            My name is Jack Do. I am a software engineer based in Sydney. I
+                            graduated as CS student from UTS (University of Technology,
+                            Sydney). I have a strong enthusiastic on programming especially
+                            on the web both backend and frontend. However currently I found
+                            cloud-based infrastructure and microservices architechture are my
+                            gems. Check out my github pages for some side projects I built and
+                            learnt.
+                        </p>
+                        <br />
+                        <p class="text">
+                            Scroll down to see some app I build in free time.
+                            <a href="#s3"><i class="far fa-hand-point-down fa-2x"></i></a>
+                        </p>
+                    </div>
+                    <div class="technologies text">
+                        <h3>Technologies I use:</h3>
+                        <a href="https://www.w3schools.com/html/html5_intro.asp"><i
+                                style="color: rgba(228, 75, 4, 0.904)" class="fab fa-html5"></i></a>
+                        <a href="https://www.w3schools.com/css/"><i style="color: rgba(4, 82, 228, 0.904)"
+                                class="fab fa-css3-alt"></i></a>
+                        <a href="https://www.javascript.com/"><i style="color: rgba(253, 206, 51, 0.904)"
+                                class="fab fa-js-square"></i></a>
+                        <a href="https://reactjs.org/"><i style="color: rgb(51, 225, 248)" class="fab fa-react"></i></a>
+                        <a href="https://nodejs.org/en/">
+                            <i style="color: rgba(58, 199, 3, 0.904)" class="fab fa-node-js"></i></a>
+                        <a href="https://vuejs.org/"><i style="color: rgba(4, 228, 123, 0.904)"
+                                class="fab fa-vuejs"></i></a>
+                        <a href="https://wordpress.com/"><i style="color: rgba(4, 138, 228, 0.904)"
+                                class="fab fa-wordpress"></i></a>
+                        <a href="https://github.com/jackdo69"><i style="color: rgba(235, 230, 228, 0.904)"
+                                class="fab fa-github"></i></a>
+                        <a href="https://gitlab.com/little_lily2020"><i style="color: rgba(228, 75, 4, 0.904)"
+                                class="fab fa-gitlab"></i></a>
+                        <a href="https://linuxmint.com/"><i style="color: rgba(228, 49, 4, 0.904)"
+                                class="fab fa-ubuntu"></i></a>
+                        <a href="https://www.docker.com/"><i style="color: rgba(128, 214, 240, 0.904)"
+                                class="fab fa-docker"></i></a>
+                        <a style="color: rgb(20, 8, 8); margin: -4px;" href="https://www.typescriptlang.org/">
+                            <img src="https://img.icons8.com/color/74/000000/typescript.png" />
+                        </a>
+                        <a style="color: rgb(20, 8, 8); margin: -4px;" href="https://kubernetes.io/">
+                            <img src="https://img.icons8.com/color/74/000000/kubernetes.png" />
+                        </a>
+                        <a style="color: rgb(20, 8, 8); margin: -4px;" href="https://www.elastic.co/">
+                            <img src="https://img.icons8.com/color/74/000000/elasticsearch.png" />
+                        </a>
+                        <a style="color: rgb(20, 8, 8); margin: -4px;" href="https://www.mongodb.com/">
+                            <img src="https://img.icons8.com/color/74/000000/mongodb.png" />
+                        </a>
+                        <a style="color: rgb(20, 8, 8); margin: -4px;" href="https://www.nginx.com/">
+                            <img src="https://img.icons8.com/color/74/000000/nginx.png" />
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="s3">
+                <h3 class="sub-heading">02. Learning projects</h3>
+                <div class="projects">
+                    <div class="container">
+                        <div class="project" data-scroll>
+                            <img src="./img/restaurant.png" alt="" />
+                            <div class="middle">
+                                <a href="https://restaurant-app-8781d.firebaseapp.com/"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/jackdo69/restaurant-app"><i class="fas fa-code"></i></a>
+                            </div>
+                            <p class="description">
+                                ReactJs - Firebase <br />
+                                Booking and order
+                            </p>
+                        </div>
+
+                        <div class="project" data-scroll>
+                            <img src="./img/pronote.png" alt="" />
+                            <div class="middle">
+                                <a href="https://pronote-2026b.web.app/"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/jackdo69/Pronote"><i class="fas fa-code"></i></a>
+                            </div>
+                            <p class="description">
+                                VueJs - Firebase <br />
+                                Storing Personal notes
+                            </p>
+                        </div>
+
+                        <div class="project" data-scroll>
+                            <img src="./img/photo-sharing.png" alt="" />
+                            <div class="middle">
+                                <a href="https://photos-sharing-97a24.firebaseapp.com/"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/jackdo69/photo-sharing-backend"><i
+                                        class="fas fa-code"></i></a>
+                            </div>
+                            <p class="description">
+                                React Node/Express MongoAtlas Google Cloud Storage <br />
+                                (Mongo Atlas currently idle here ^^)
+                            </p>
+                        </div>
+
+                        <div class="project" data-scroll>
+                            <img src="./img/tetris.png" alt="" />
+                            <div class="middle">
+                                <a href="https://react-tetris-40f9e.firebaseapp.com/"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/jackdo69/Tetris"><i class="fas fa-code"></i></a>
+                            </div>
+                            <p class="description">ReactJS Tetris</p>
+                        </div>
+
+                        <div class="project" data-scroll>
+                            <img src="./img/flappy-bird.png" alt="" />
+                            <div class="middle">
+                                <a href="https://flappy-bird-961ab.web.app"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/jackdo69/flappy-bird"><i class="fas fa-code"></i></a>
+                            </div>
+                            <p class="description">Flappy Bird</p>
+                        </div>
+
+                        <div class="project" data-scroll>
+                            <img src="./img/social-network.png" alt="" />
+                            <div class="middle">
+                                <!-- <a href="https://react-tetris-40f9e.firebaseapp.com/"><i
+                                        class="fas fa-external-link-alt"></i></a> -->
+                                <a href="https://github.com/jackdo69/Social-Network-Frontend"><i
+                                        class="fas fa-code"></i></a>
+                            </div>
+                            <p class="description">
+                                React-MaterialUI, Node Typescript <br />
+                                Elasticsearch, Redis, SocketIO
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="s4">
+                <h3 class="sub-heading">03. Contact</h3>
+                <div class="contact">
+                    <p class="description">
+                        Thanks for checking me out. You can find me in the following
+                        platforms. Cheers!
+                    </p>
+                    <div class="contact-box">
+                        <a href="https://github.com/jackdo69"><i style="color: rgb(50, 49, 49)"
+                                class="fab fa-github fa-4x"></i></a>
+                        <a href="https://www.linkedin.com/in/jack-do-777747140/"><i style="color: rgb(2, 113, 174)"
+                                class="fab fa-linkedin fa-4x"></i></a>
+                        <a href="https://www.instagram.com/jack_do68/"><i style="color: rgb(159, 53, 170)"
+                                class="fab fa-instagram fa-4x"></i></a>
+                        <a href="https://www.messenger.com/t/portgas.ace.93"><i style="color: rgb(0, 164, 247)"
+                                class="fab fa-facebook-messenger fa-4x"></i></a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <p class="text" style="text-align: center">
+                ©
+                <script>
+                    document.write(new Date().getFullYear());
+                </script>
+                . Made with ♥ by Jackie.
+            </p>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script src="./app.js"></script>
+    <script>
+        ScrollOut({
+            threshhold: 0.5,
+            cssProps: {
+                visibleY: true,
+            },
+        });
+    </script>
+</body>
+
+</html>
